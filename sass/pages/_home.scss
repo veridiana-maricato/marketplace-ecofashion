@@ -1,0 +1,34 @@
+.main_title{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+    color: $cor-destaque;
+    font-weight: bold;
+}
+
+.logo_qrcode{  
+    text-align: center;
+    margin-top: -70px;
+    margin-right: 10px;
+}
+.logo_qrcode img{
+    width: 300px;
+}
+
+.frase{
+   display: block;
+   margin-left: 600px;
+   margin-top: -30px;
+   color: $cor-0;
+   line-height: 20px;
+}
+
+.main_subtitle{
+    margin-left: 60px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.subtitle::before{
+    content: url(/img/ponto.png);
+}

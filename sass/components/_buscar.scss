@@ -1,0 +1,89 @@
+.buscar{
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    background-color: $cor-7;
+    color: $cor-destaque;
+    font-weight: bold;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-left: 100px;
+
+    &__opcoes{
+        display: flex;
+        font-size: 18px;
+        gap: 30px;
+    }
+
+    &__escrever{
+        font-size: 22px;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.opcao_item:hover{
+scale: 1.1;
+transition: all 200ms ease-in;
+cursor: pointer;
+}
+
+
+.buscar input{
+    border-radius: 5px;
+    border: 1px solid $cor-destaque;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 400px;
+    background-color: $cor-2;
+}
+.buscar__escrever img{
+width: 35px;
+}
+
+#btnSearch{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: -15px;
+}
+#btnSearch:hover{
+   scale: 1.1;
+   transition: all 200ms ease-in;
+}
+
+.opcao{
+    position: relative;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: $cor-7;
+    padding: 10px;
+    border-radius: 3px;
+    line-height: 40px;
+    }
+
+    .item{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .dropdown li{
+       list-style: none;
+       margin-left: -40px;
+       padding: 10px;
+    }
+.opcao:hover .dropdown{
+        display: block;
+    }
+.dropdown{
+    display: none;
+}
+
+

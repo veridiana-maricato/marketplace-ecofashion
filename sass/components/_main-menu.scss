@@ -1,0 +1,83 @@
+.main_menu__container{
+    display: flex;
+    justify-content: space-between;
+    background-color: $cor-0;
+    align-items: center;
+    height: 80px;
+    z-index: 0;
+}
+
+.items__list{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-right: 100px;
+}
+
+.item{
+    text-decoration: none;
+    color: $cor-3;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 30px;
+
+    &__current{
+        color: $cor-7;
+        font-weight: bold;
+    }
+}
+.item:hover{
+    transition: all 200ms ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item__current:hover{
+    text-decoration: none;
+    color: $cor-7;
+    font-size: 17px;
+    }
+
+.logo img{
+    width: 100px;
+    margin-left: 100px;
+}
+
+.login-div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.login-dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;    
+    background-color: $cor-0;
+    padding: 6px;
+    right: -100px;
+    font-weight: bold;
+    color: $cor-3;
+    font-size: 14px;
+    line-height: 35px;
+    padding-top: 25px;
+}
+
+.login-dropdown input{
+    border: 1px solid $cor-destaque;
+    transition: all 200ms ease-in-out;
+}
+.login-dropdown label{
+    transition: all 200ms ease-in-out;
+}
+
+.login-div:hover .login-dropdown{
+    display: block;
+    transition: all 2000 ease;
+}
+
+.login-dropdown{
+    display: none;
+}

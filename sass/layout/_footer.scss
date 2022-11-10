@@ -1,0 +1,42 @@
+.footer{
+    width: 100%;
+    &__linha1{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: $cor-0;
+        padding: 80px;
+    }
+
+    &__column__title{
+        color: $cor-7;
+    }
+    
+    &__logo img{
+        width: 200px;
+    }
+
+    &__list{
+        list-style: none;
+        line-height: 35px;
+        margin-left: -40px;
+
+        &__link{
+            text-decoration: none;
+            color: $cor-7;
+        }
+        &__link:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__linha2{
+        background: $cor-destaque;
+        color: $cor-7;
+        font-size: 13px;
+        text-align: center;
+        margin-top: -14px;
+        margin-bottom: -10px;
+        padding: 0.1px;
+    }
+}
