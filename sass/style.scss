@@ -14,6 +14,7 @@
 // @import 'components/_logo';
 @import 'components/_main-menu';
 @import 'components/_buscar';
+@import 'components/_loginsingin';
 // @import 'components/_form';
 // @import 'components/_form-pedido';
 // @import 'components/_form-pagamento';
@@ -21,12 +22,14 @@
 // Layout
 @import 'layout/_header';
 @import 'layout/_footer';
+@import 'layout/_form_contato';
 // @import 'layout/_container';
 // @import 'layout/_covers';
 
 // Pages
 @import 'pages/_home';
 @import 'pages/_sobre';
+@import 'pages/_marcas';
 // @import 'pages/_receitas';
 // @import 'pages/_endereco';
 // @import 'pages/_compra-realizada';

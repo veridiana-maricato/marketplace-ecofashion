@@ -1,0 +1,92 @@
+.login_container{
+    width: 600px;
+    margin: 0 auto;
+    height: 400px;
+    background-color: $cor-destaque;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.login_title_div{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    color: $cor-2;
+    background-color: $cor-5;
+}
+
+.login_title, .singin_title{
+    color: $cor-3;
+    cursor: pointer;
+}
+
+#login_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    line-height: 50px;
+    color: $cor-2;
+    font-size: 20px;
+    height: 300px;
+}
+
+#login_page input{
+    background-color: $cor-3;
+    border: 3px solid $cor-5;
+    height: 35px;
+    border-radius: 4px;
+    color: $cor-5;
+}
+
+#btnLogin{
+    border-radius: 8px;
+    color: $cor-2;
+    background-color: $cor-0;
+    border: 2px solid $cor-2;
+}
+#btnLogin:hover{
+    scale: 1.1;
+    background-color: $cor-7;
+    color: $cor-destaque;
+    transition: all 200ms ease-in-out;
+}
+
+.current_title{
+    font-weight: bold;
+    background: $cor-destaque;
+    width: 60%;
+    padding: 20px;
+}
+
+.not_current_title{
+    font-weight: bold;
+    background: $cor-5;
+    width: 40%;
+    padding: 20px;
+}
+
+#singin_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    line-height: 35px;
+    color: $cor-2;
+    font-size: 17px;
+    height: 300px;
+}
+
+#singin_page input{
+    background-color: $cor-3;
+    border: 3px solid $cor-5;
+    height: 35px;
+    border-radius: 4px;
+    color: $cor-5;
+}
+
+#singin_title_btn, #login_title_btn{
+    border: none;
+    font-size: 25px;
+}
+

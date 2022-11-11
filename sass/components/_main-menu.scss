@@ -1,13 +1,15 @@
 .main_menu__container{
     display: flex;
+    height: 40px;
     justify-content: space-between;
     background-color: $cor-0;
     align-items: center;
-    height: 80px;
-    z-index: 0;
+    height: 80px;   
+    position: relative;
 }
 
 .items__list{
+    padding-top:60px;
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -46,23 +48,25 @@
 .login-div{
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 
 .login-dropdown{
     display: flex;
+    height: 130px;
     flex-direction: column;
     position: absolute;
-    top: 20px;    
-    background-color: $cor-0;
-    padding: 6px;
-    right: -100px;
+    bottom: -130px; 
+    background-color: $cor-2;
+    padding: 10px;
+    padding-bottom: 10px;
+    right: 30px;
     font-weight: bold;
-    color: $cor-3;
+    color: $cor-0;
     font-size: 14px;
     line-height: 35px;
-    padding-top: 25px;
+    opacity: 1;
+    z-index: 0;
 }
 
 .login-dropdown input{
@@ -74,10 +78,30 @@
 }
 
 .login-div:hover .login-dropdown{
-    display: block;
-    transition: all 2000 ease;
+    opacity: 1;
+    transition: opacity 700ms ease;
+    transform: translateY(0)
+    // transform: translateY(30px);
 }
 
 .login-dropdown{
-    display: none;
+    opacity: 0;
+    transform: translateY(-330px)
 }
+
+.login-dropdown:hover{
+    opacity: 1;
+}
+
+.login-div{
+    padding-bottom:60px;
+}
+
+// .retangulo{
+//     background-color: $cor-0;
+//     width: 400px;
+//     height: 80px;
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+// }

@@ -6,6 +6,14 @@
     font-weight: bold;
 }
 
+.main_subtitle{
+    text-align: center;
+    margin-top: -15px;    
+    color: $cor-5;
+    font-weight: bold;
+    font-size: 25px;
+}
+
 .logo_qrcode{  
     text-align: center;
     margin-top: -70px;
@@ -15,19 +23,23 @@
     width: 300px;
 }
 
-.frase{
-   display: block;
-   margin-left: 600px;
-   margin-top: -30px;
-   color: $cor-0;
-   line-height: 20px;
+.frases_flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
 }
 
-.main_subtitle{
-    margin-left: 60px;
-    font-size: 30px;
-    margin-bottom: 20px;
+.frases{
+ display: block;
+ margin: 0 auto;
+   width: 400px;
+   margin-top: 30px;
+   color: $cor-0;
+   line-height: 20px;
+   margin-bottom: 50px;
 }
+
 
 .subtitle::before{
     content: url(/img/ponto.png);
