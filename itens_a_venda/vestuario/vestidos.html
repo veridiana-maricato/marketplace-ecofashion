@@ -22,14 +22,14 @@
                         <li><a class="item" href="/contato.html">Contato</a></li>
                         <div class="login-div">
                             <a id="loginButton" class="item" href="/login.html">Login</a>
-                            <!-- <div id="hidden" class="hidden"> -->
+                            <div class="hidden_opacity">                              
                                 <div class="login-dropdown">
-                                    <label id="label-usuario" for="usuario">Usuário</label>
-                                    <input id="usuario" type="text" placeholder="e-mail">
-                                    <label for="senha">Senha</label>
-                                    <input id="senha" type="text" placeholder="senha">
+                                    <label id="label-usuario" for="usuario_dropdown">Usuário</label>
+                                    <input id="usuario_dropdown" type="email" placeholder="e-mail">
+                                    <label for="senha_dropdown">Senha</label>
+                                    <input id="senha_dropdown" type="password" placeholder="senha">
                                 </div>
-                            <!-- </div> -->
+                            </div>
                         </div>
                     </ul>
                 </nav>
@@ -39,41 +39,41 @@
     <header class="buscar">
         <div class="buscar__opcoes">
             <div class="opcao">
-                <p class="opcao_item">Vestuário</p>
+                <a href="/itens_a_venda/vestuario/vestuario.html" class="opcao_item">Vestuário</a>
                 <div class="dropdown">
                     <li>
-                        <a class="item" href="/itens_a_venda/vestuario/vestidos.html">Vestidos</a>
+                        <a class="item_buscar" href="/itens_a_venda/vestuario/vestidos.html">Vestidos</a>
                     </li>
                      <li>
-                        <a class="item" href="/itens_a_venda/vestuario/camisas.html">Camisas</a>
+                        <a class="item_buscar" href="/itens_a_venda/vestuario/camisas.html">Camisas</a>
                     </li>
                     <li>
-                        <a class="item" href="/itens_a_venda/vestuario/saias.html">Saias</a>
+                        <a class="item_buscar" href="/itens_a_venda/vestuario/saias.html">Saias</a>
                     </li>
                 </div>                    
             </div>
             <div class="opcao">
-                <p class="opcao_item">Acessórios</p>
+                <a href="/itens_a_venda/acessorios/acessorios.html" class="opcao_item">Acessórios</a>
                 <div class="dropdown">
                     <li>
-                        <a class="item" href="/itens_a_venda/acessorios/bolsas.html">Bolsas</a>
+                        <a class="item_buscar" href="/itens_a_venda/acessorios/bolsas.html">Bolsas</a>
                      </li>
                     <li>
-                        <a class="item" href="/itens_a_venda/acessorios/bones.html">Bonés</a>
+                        <a class="item_buscar" href="/itens_a_venda/acessorios/bones.html">Bonés</a>
                     </li>
                 </div>
             </div>
             <div class="opcao">
-                <p class="opcao_item">Calçados</p>
+                <a href="/itens_a_venda/calcados/calcados.html" class="opcao_item">Calçados</a>
                 <div class="dropdown">
                     <li>
-                        <a class="item"  href="/itens_a_venda/calcados/sandalias.html">Sandálias</a>
+                        <a class="item_buscar"  href="/itens_a_venda/calcados/sandalias.html">Sandálias</a>
                     </li>
                     <li>
-                        <a class="item" href="/itens_a_venda/calcados/tenis.html">Tênis</a>
+                        <a class="item_buscar" href="/itens_a_venda/calcados/tenis.html">Tênis</a>
                     </li>
                     <li>
-                        <a class="item" href="/itens_a_venda/calcados/sapatos.html">Sapatos</a>
+                        <a class="item_buscar" href="/itens_a_venda/calcados/sapatos.html">Sapatos</a>
                     </li>
                 </div>
             </div>
@@ -83,49 +83,80 @@
             <input id="buscar-produto" type="text" placeholder="O que está procurando?">
             <button id="btnSearch" onclick="search"><img src="/img/lupa.png" alt="Lupa"></button>
         </div>
-    </header>   
-    <main>
-        <h1 class="main_title">EcoFashion</h1>
-        <div class="logo_qrcode">
-            <img src="/img/qr_code.png" alt="">
-        </div>
-        <div class="frase">
-            <h2 class="main_subtitle">a nova moda é</h2>
-            <h3 class="subtitle">ajudar o planeta</h3>
-            <h3 class="subtitle">empoderar mulheres</h3>
-            <h3 class="subtitle">consumo consciente e sem culpa!</h3>
-        </div>
+    </header>  
+    
+    <!-- Fim do cabeçalho -->
+    <!-- Inicio do main -->
 
-    </main>
-    <footer class="footer">
-        <div class="footer__linha1">
-            <a class="footer__logo" href="/home.html">
-                <img src="/img/logo_folha.png" alt="Logo">
-            </a>
-            <div class="footer__column">                        
-                <div class="footer__midia">         
-                    <h3 class="footer__column__title">Midia</h3>                   
-                    <ul class="footer__list">                               
-                        <li><a class="footer__list__link" target="_blank" href="https://www.instagram.com/odoyacozinha/">Instagram</a></li>
-                        <li><a class="footer__list__link" target="_blank" href="https://www.instagram.com/odoyacozinha/">E-mail</a></li>
-                    </ul>                            
-                </div>
-            </div>
-            <div class="footer__column">                        
-                <div class="footer__links">
-                    <h3 class="footer__column__title">Links</h3>
-                    <ul class="footer__list">                                
-                        <li><a class="footer__list__link" href="home.html">Home</a></li>
-                        <li><a class="footer__list__link" href="sobre.html">Sobre nós</a></li>
-                        <li><a class="footer__list__link" href="marcas.html">Marcas parceiras</a></li>
-                        <li><a class="footer__list__link" href="contato.html">Contato</a></li>
-                        <li><a class="footer__list__link" href="login.html">Crie uma conta ou faça login</a></li>
+    <main>        
+            <h1 class="main_title">Vestidos</h1>
+        <section class="main_subtitle">
+            <a href="/marcas.html" class="text-center">Procure roupas por marcas</a>
+            <div class="marcas_parceiras">
+                <ul class="lista-itens">
+                        <li class="lista-itens__item">
+                            <a href="/itens_a_venda/item.html"><img class="lista-itens__img" src="/itens_a_venda/img/27.jpg" alt=""></a>
+                            <h2 class="lista-itens__titulo">R$ 200</h2>                        
+                        </li>
+                        <li class="lista-itens__item">
+                            <a href="/itens_a_venda/item.html"><img class="lista-itens__img" src="/itens_a_venda/img/15.jpg" alt=""></a>
+                            <h2 class="lista-itens__titulo">R$ 200</h2>                        
+                        </li>
+                        <li class="lista-itens__item">
+                            <a href="/itens_a_venda/item.html"><img class="lista-itens__img" src="/itens_a_venda/img/12.jpg" alt=""></a>
+                            <h2 class="lista-itens__titulo">R$ 200</h2>                        
+                        </li>
+                        <li class="lista-itens__item">
+                            <a href="/itens_a_venda/item.html"><img class="lista-itens__img" src="/itens_a_venda/img/7.jpg" alt=""></a>
+                            <h2 class="lista-itens__titulo">R$ 200</h2>                        
+                        </li>
+                        <li class="lista-itens__item">
+                            <a href="/itens_a_venda/item.html"><img class="lista-itens__img" src="/itens_a_venda/img/25.jpg" alt=""></a>
+                            <h2 class="lista-itens__titulo">R$ 200</h2>                        
+                        </li>
+                        <li class="lista-itens__item">
+                            <a href="/itens_a_venda/item.html"><img class="lista-itens__img" src="/itens_a_venda/img/6.jpg" alt=""></a>
+                            <h2 class="lista-itens__titulo">R$ 200</h2>                        
+                        </li>                                   
                     </ul>
+
+            </div>
+        </section>        
+</main>
+    
+<!-- Fim do main -->
+<!-- Comeco do footer -->
+    <footer class="footer_container">
+        <div class="footer">
+            <div class="footer__linha1">
+                <a class="footer__logo" href="/home.html">
+                    <img src="/img/logo_folha.png" alt="Logo">
+                </a>
+                <div class="footer__column">                        
+                    <div class="footer__midia">         
+                        <h3 class="footer__column__title">Midia</h3>                   
+                        <ul class="footer__list">                               
+                            <li><a class="footer__list__link" target="_blank" href="https://www.instagram.com/odoyacozinha/">Instagram</a></li>
+                            <li><a class="footer__list__link" target="_blank" href="https://www.instagram.com/odoyacozinha/">E-mail</a></li>
+                        </ul>                            
+                    </div>
+                </div>
+                <div class="footer__column">                        
+                    <div class="footer__links">
+                        <h3 class="footer__column__title">Links</h3>
+                        <ul class="footer__list">                                
+                            <li><a class="footer__list__link" href="home.html">Home</a></li>
+                            <li><a class="footer__list__link" href="sobre.html">Sobre nós</a></li>
+                            <li><a class="footer__list__link" href="marcas.html">Marcas parceiras</a></li>
+                            <li><a class="footer__list__link" href="contato.html">Contato</a></li>
+                            <li><a class="footer__list__link" href="login.html">Crie uma conta ou faça login</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__linha2">
-            <p>©2022 - All rights reserved - website produced by Veridiana Maricato</p>
+            <div class="footer__linha2">
+                <p>©2022 - All rights reserved - website produced by Veridiana Maricato</p>
+            </div>
         </div>
 </footer>     
     <script type="text/javascript" src="/js/index.js"></script>

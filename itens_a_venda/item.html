@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="main_menu__container">
+            <div class="logo">
+                <img src="/img/logo_folha.png" alt="">
+            </div>
+            <div class="main_menu__items">
+                <nav>                    <ul class="items__list">
+                        <li><a class="item" href="/home.html">Home</a></li>
+                        <li><a class="item" href="/sobre.html">Sobre</a></li>
+                        <li><a class="item item__current" href="/marcas.html">Marcas Parceiras</a></li>
+                        <li><a class="item" href="/contato.html">Contato</a></li>
+                        <div class="login-div">
+                            <a id="loginButton" class="item" href="/login.html">Login</a>
+                            <div class="hidden_opacity">                              
+                                <div class="login-dropdown">
+                                    <label id="label-usuario" for="usuario_dropdown">Usuário</label>
+                                    <input id="usuario_dropdown" type="email" placeholder="e-mail">
+                                    <label for="senha_dropdown">Senha</label>
+                                    <input id="senha_dropdown" type="password" placeholder="senha">
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> 
+    <header class="buscar">
+        <div class="buscar__opcoes">
+            <div class="opcao">
+                <a href="/itens_a_venda/vestuario/vestuario.html" class="opcao_item">Vestuário</a>
+                <div class="dropdown">
+                    <li>
+                        <a class="item_buscar" href="/itens_a_venda/vestuario/vestidos.html">Vestidos</a>
+                    </li>
+                     <li>
+                        <a class="item_buscar" href="/itens_a_venda/vestuario/camisas.html">Camisas</a>
+                    </li>
+                    <li>
+                        <a class="item_buscar" href="/itens_a_venda/vestuario/saias.html">Saias</a>
+                    </li>
+                </div>                    
+            </div>
+            <div class="opcao">
+                <a href="/itens_a_venda/acessorios/acessorios.html" class="opcao_item">Acessórios</a>
+                <div class="dropdown">
+                    <li>
+                        <a class="item_buscar" href="/itens_a_venda/acessorios/bolsas.html">Bolsas</a>
+                     </li>
+                    <li>
+                        <a class="item_buscar" href="/itens_a_venda/acessorios/bones.html">Bonés</a>
+                    </li>
+                </div>
+            </div>
+            <div class="opcao">
+                <a href="/itens_a_venda/calcados/calcados.html" class="opcao_item">Calçados</a>
+                <div class="dropdown">
+                    <li>
+                        <a class="item_buscar"  href="/itens_a_venda/calcados/sandalias.html">Sandálias</a>
+                    </li>
+                    <li>
+                        <a class="item_buscar" href="/itens_a_venda/calcados/tenis.html">Tênis</a>
+                    </li>
+                    <li>
+                        <a class="item_buscar" href="/itens_a_venda/calcados/sapatos.html">Sapatos</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="buscar__escrever">
+            <label for="buscar-produto"> Buscar produto</label>
+            <input id="buscar-produto" type="text" placeholder="O que está procurando?">
+            <button id="btnSearch" onclick="search"><img src="/img/lupa.png" alt="Lupa"></button>
+        </div>
+    </header>  
+    
+    <!-- Fim do cabeçalho -->
+    <!-- Inicio do main -->
+
+    <main>       
+            
+        <section class="main_subtitle">
+            <p class="text-center titulo-peca">Título da roupa</p>              
+        </section>   
+        <div class="img-peca">
+            <img src="/itens_a_venda/img/bolsa.jpg" alt="">
+        </div>
+        <div class="div-miniaturas">
+            <div class="miniaturas">
+                <img src="/itens_a_venda/img/bolsa.jpg" alt="">
+                <img src="/itens_a_venda/img/bolsa.jpg" alt="">
+                <img src="/itens_a_venda/img/bolsa.jpg" alt="">
+            </div>
+        </div>
+        <div class="div-valor">
+            <p class="valor">R$ 527</p>
+            <p>Descrição da roupa, dos materiais, etc.</p>
+            <p id="textoSaibaMais" class="continuacao-texto hidden">Continuação da descrição da roupa, dos materiais, etc.</p>
+            <div class="buttonsSaiba">
+                <button id="btnSaibaMais" onclick="exibirTexto()">Saiba mais</button>
+                <button id="btnSaibaMenos" class="hidden" onclick="esconderTexto()">Menos</button>
+            </div>
+            <div class="tamanho">
+                <p>Tamanho</p>
+                <select id="escolheTamanho" name="tamanho">
+                    <option value="valor0" selected="selected" disabled="true">Selecione um tamanho</option>
+                    <option value="valor1">PP</option>
+                    <option value="valor2">P</option>
+                    <option value="valor3">M</option>
+                    <option value="valor4">G</option>
+                    <option value="valor5">GG</option>
+                  </select>
+                <p>Quantidade</p>
+                <select id="escolheTamanho" name="tamanho">
+                    <option value="valor0" selected="selected" disabled="true">Selecione uma quantia</option>
+                    <option value="valor1">1</option>
+                    <option value="valor2">2</option>
+                    <option value="valor3">3</option>
+                    <option value="valor4">4</option>
+                    <option value="valor5">5</option>
+                    <option value="valor6">6</option>
+                  </select>
+                  <div class="botoes-comprar">
+                    <button id="btnAdicionarCompra" onclick="adicionarAoCarrinho()" disabled>Adicionar ao carrinho</button>
+                    <button id="btnFinalizarCompra" onclick="adicionarAoCarrinhoEFinalizar()" disabled>Adicionar ao carrinho <br> e finalizar compra</button>
+                  </div>
+
+            </div>
+        </div>
+       
+
+</main>
+    
+<!-- Fim do main -->
+<!-- Comeco do footer -->
+    <footer class="footer_container">
+        <div class="footer">
+            <div class="footer__linha1">
+                <a class="footer__logo" href="/home.html">
+                    <img src="/img/logo_folha.png" alt="Logo">
+                </a>
+                <div class="footer__column">                        
+                    <div class="footer__midia">         
+                        <h3 class="footer__column__title">Midia</h3>                   
+                        <ul class="footer__list">                               
+                            <li><a class="footer__list__link" target="_blank" href="https://www.instagram.com/odoyacozinha/">Instagram</a></li>
+                            <li><a class="footer__list__link" target="_blank" href="https://www.instagram.com/odoyacozinha/">E-mail</a></li>
+                        </ul>                            
+                    </div>
+                </div>
+                <div class="footer__column">                        
+                    <div class="footer__links">
+                        <h3 class="footer__column__title">Links</h3>
+                        <ul class="footer__list">                                
+                            <li><a class="footer__list__link" href="home.html">Home</a></li>
+                            <li><a class="footer__list__link" href="sobre.html">Sobre nós</a></li>
+                            <li><a class="footer__list__link" href="marcas.html">Marcas parceiras</a></li>
+                            <li><a class="footer__list__link" href="contato.html">Contato</a></li>
+                            <li><a class="footer__list__link" href="login.html">Crie uma conta ou faça login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__linha2">
+                <p>©2022 - All rights reserved - website produced by Veridiana Maricato</p>
+            </div>
+        </div>
+</footer>     
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

@@ -3,7 +3,6 @@
     margin-top: 80px;
     font-size: 50px;
     color: $cor-destaque;
-    font-weight: bold;
 }
 
 .main_subtitle{
@@ -12,6 +11,7 @@
     color: $cor-5;
     font-weight: bold;
     font-size: 25px;
+    text-decoration: none;
 }
 
 .logo_qrcode{  
@@ -43,4 +43,10 @@
 
 .subtitle::before{
     content: url(/img/ponto.png);
+}
+
+.text-center{
+    text-decoration: none;
+    color: $cor-5;
+    font-size: 16px;
 }

@@ -1,5 +1,6 @@
 .footer_container{
     display: block;
+    margin-top: 150px;
 }
 .footer{
     width: 100%;
@@ -12,7 +13,7 @@
     }
 
     &__column__title{
-        color: $cor-7;
+        color: $cor-3;
     }
     
     &__logo img{

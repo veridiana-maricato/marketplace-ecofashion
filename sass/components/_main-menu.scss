@@ -14,6 +14,7 @@
     list-style: none;
     justify-content: space-around;
     margin-right: 100px;
+
 }
 
 .item{
@@ -22,9 +23,11 @@
     font-size: 17px;
     font-weight: bold;
     margin-left: 30px;
+    
+    
 
     &__current{
-        color: $cor-7;
+        color: $cor-5;
         font-weight: bold;
     }
 }
@@ -86,7 +89,7 @@
 
 .login-dropdown{
     opacity: 0;
-    transform: translateY(-330px)
+    transform: translateY(-480px)
 }
 
 .login-dropdown:hover{
